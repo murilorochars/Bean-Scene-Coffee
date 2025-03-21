@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/coffee_image.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    
+}
+
+.Logo {
+    font-size: 32px;
+    font-weight: bold;
+   
+    font-family: 'Clicker Script';
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.menu li {
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu li:hover {
+    color: #F9C06A;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.login p {
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login p:hover {
+    color: #F9C06A;
+}
+
+.login span {
+    background-color: #F9C06A;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login span:hover {
+    background-color: #e5a653;
+}
+
+/* CONTAINER */
+.Container {
+    width: 50%;
+    margin-left:10% ;
+   
+    margin-top: 10%;
+    font-family: 'Clicker Script';
+}
+
+.Container .sub {
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.Container .cof {
+    font-size: 120px;
+    
+    margin: 10px 0;
+    
+}
+.Container .p{
+    white-space: pre-wrap;
+    font-size: 20px; /* Garante quebras de linha automáticas, se necessário */
+}
+
+
+
+.Container .o span {
+    margin-top: 30px;
+}
+span{
+    background-color: #F9C06A;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .NavBar {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu ul {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .Container {
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .Container .cof {
+        font-size: 50px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+}
